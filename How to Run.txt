@@ -1,0 +1,9 @@
+Software Used
+
+1. XAMPP Server
+2. VS Code
+
+Setup Procedure
+
+1. Create a database name "cake_shop"
+2. Import the SQL file or copy and paste query from the folder "Database"
