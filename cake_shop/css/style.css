@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom right, #fdd0e3, #d9e9ff);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-panel {
+  width: 40%;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.left-panel h1 {
+  font-size: 2.5rem;
+  color: #5a2174;
+}
+
+.left-panel h1 span {
+  color: #d13c8a;
+}
+
+.left-panel ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.left-panel li {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.left-panel li img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+button#startBtn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background: #a254ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.right-panel {
+  width: 45%;
+  text-align: center;
+}
+
+.right-panel h2 {
+  font-size: 2.5rem;
+  color: #a000f3;
+  text-shadow: 3px 3px rgb(255, 255, 255);
+  margin-top: 150px;
+  margin-right: 140px;
+}
+#container3D canvas {
+  width: 150% !important;
+  height: 70% !important;
+  display: block;
+transform: translate(-200px, -15px); 
+}
+
+/*shape styles*/
+.select-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.select-card {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  transition: transform 0.2s, border-color 0.3s;
+  width: 130px;
+  height: 170px;
+  background-color: #fff;
+
+}
+
+.select-card:hover {
+  transform: scale(1.05);
+  border-color: #ff69b4;
+}
+
+.select-card img {
+  margin-top: 25px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.select-card p {
+  font-size: 1.1rem;
+  color: #5a2174;
+  font-weight: bold;
+}
+
+.next-button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.next-button-container button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-button-container button:hover {
+  background-color: #ff1493;
+}
+
+.design-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* less spacing between cards */
+  margin-bottom: 20px;
+}
+
+.design-card {
+  width: 90px;          /* smaller width */
+  height: 110px;        /* smaller height */
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.design-card img {
+  width: 50px;          /* smaller image */
+  height: 50px;
+  object-fit: contain;
+}
+
+.design-card p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.design-card:hover {
+  transform: scale(1.05);
+  border-color: #ff6f61;
+}
+
+.upload-section {
+  margin-top: 20px;
+}
+.note {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Unique style for Apply & Preview button */
+.apply-btn {
+  background: #6a5acd; 
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 18px;
+  border: 2px solid #483d8b;
+  border-radius: 14px; 
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.apply-btn:hover {
+  background: #7b68ee;
+  border-color: #5a4fcf;
+  box-shadow: 0 8px 16px rgba(106, 90, 205, 0.3);
+}
+
+.apply-btn:active {
+  background: #5a4fcf;
+}
+
+/* color design*/
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-btn {
+  -webkit-appearance: none; /* Remove default appearance in WebKit browsers */
+  -moz-appearance: none;    /* Remove default appearance in Firefox */
+  appearance: none;
+  
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.color-btn::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-btn::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.color-btn::-moz-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.color-btn:hover {
+  transform: scale(1.2);
+}
+
+.personalize-box {
+  border-radius: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  max-width: 400px;
+}
+/* Input + button in one row */
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between input and button */
+  margin-top: 8px;
+}
+
+/* Input box */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  flex: 1; /* take up remaining space */
+  max-width: 300px;
+}
+
+.input-wrapper .icon {
+  width: 20px;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 8px;
+  background: transparent;
+}
+
+/* Apply button */
+.apply-name-btn {
+  background: #6a5acd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap; /* keep text in one line */
+}
+
+.apply-name-btn:hover {
+  background: #7b68ee;
+}
+
+/*
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.input-wrapper .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+  background: transparent;
+}
+*/
+#charCount {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+#candle-controls,
+#stick-controls,
+#sprinkle-controls {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(100px, 250px);
+  display: flex;
+  gap: 450px;    /* smaller spacing (you can adjust: 10px, 20px, etc.) */
+  z-index: 10;
+}
+
+
+#candle-controls button,#stick-controls button,
+#sprinkle-controls button {
+  background-color: white;
+  border: 2px solid purple;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
